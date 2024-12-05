@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+          
+            background-color: black ;
+            color: white;
+            text-align: center;
+        
+        }
+        .container{
+            height: 70vh;
+
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            
+        }
+         h1{
+            padding-top: 20px;
+         }
+         .msg-container {
+            margin-top: 30px;
+         }
+
+         .msg{
+            font-size: 30px;
+
+         }
+        .Game{
+            height: 60vmin;
+            width: 60vmin;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+          
+            
+        }
+        .box{
+            height: 18vmin;
+            width: 18vmin;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 0 1rem yellow;
+            font-size: 8vmin;
+            color: black;
+            background-color: white;
+            
+}
+#resetgame{
+    height: 40px;
+    width: 100px;
+    border: 2px solid yellow;
+    box-shadow: red 10px 0px 10px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+} 
+#newgame{
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    border: 2px solid yellow;
+    box-shadow: red 10px 10px 10px ;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+    
+#magicbtn{
+    height: 40px;
+    width: 100px;
+    border: 2px white solid;
+    box-shadow: yellow 10px 0px 10px;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+        
+    </style>
+  
+      <div class="msg-container hide">
+        <p class="msg"> GOOD PLAY WINNER</p>
+         <button id="newgame">NEW GAME</button>
+      </div>
+
+    <main>
+        <h1>TIC TAC TEO</h1>
+        <div class="container">
+          
+            <div class="Game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+    </main>
+    <button id="resetgame">RESET</button>
+    <button id="magicbtn">MAGIC</button>
+    <script src="index.js"></script>
+</body>
+</html>
